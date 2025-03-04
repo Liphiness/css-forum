@@ -1,0 +1,59 @@
+/* Container principal */
+#custom_post .container {
+    background-color: #0a0a0a;
+    color: #c0e0d0;
+    font-family: Arial, sans-serif;
+    padding: 40px;
+    width: var(--width, 600px);
+    max-width: 800px;
+    border: 2px solid var(--accent, #68a7a7);
+    position: relative;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/* Título e subtítulo */
+#custom_post .title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    text-align: center;
+    text-transform: lowercase;
+}
+
+#custom_post .subtitle {
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/* Rodapé */
+#custom_post .footer {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+/* Bordas decorativas */
+#custom_post .container::before, 
+#custom_post .container::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--accent, #68a7a7);
+}
+
+#custom_post .container::before {
+    top: 10px;
+    left: 10px;
+    border-right: none;
+    border-bottom: none;
+}
+
+#custom_post .container::after {
+    bottom: 10px;
+    right: 10px;
+    border-left: none;
+    border-top: none;
+}
